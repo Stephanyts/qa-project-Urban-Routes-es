@@ -1,7 +1,6 @@
-import Helpers
 import data
+import Helpers
 from selenium.webdriver.common.by import By
-
 
 class UrbanRoutesPage:
     from_field = (By.ID, 'from')
