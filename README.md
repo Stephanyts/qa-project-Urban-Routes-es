@@ -6,7 +6,7 @@ Este proyecto tiene como objetivo automatizar las pruebas de la aplicación web 
 
 ## Estructura del proyecto:
 
-UrbanRoutes/
+qa-project-Urban-Routes-es/
 
 -- data.py                # Contiene los datos utilizados en las pruebas
 
