@@ -1,5 +1,5 @@
-import data
 import Helpers
+import data
 from selenium.webdriver.common.by import By
 
 class UrbanRoutesPage:
@@ -130,5 +130,4 @@ class UrbanRoutesPage:
 
 
     def is_send_request_button_enabled(self):
-        return self.driver.find_element(*self.send_taxi_request).is_selected()
-    
+        return self.driver.find_element(*self.send_taxi_request).is_selected()   
