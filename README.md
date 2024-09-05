@@ -7,10 +7,10 @@ Este proyecto tiene como objetivo automatizar las pruebas de la aplicación web 
 ## Estructura del proyecto:
 
 UrbanRoutes/
-├── data.py                # Contiene los datos utilizados en las pruebas
-├── helpers.py             # Funciones auxiliares
-├── UrbanRoutesPage.py      # Localizadores y métodos para interactuar con la página web
-└── main.py                # Pruebas automatizadas
+-- data.py                # Contiene los datos utilizados en las pruebas
+-- helpers.py             # Funciones auxiliares
+-- UrbanRoutesPage.py      # Localizadores y métodos para interactuar con la página web
+-- main.py                # Pruebas automatizadas
 
 ## Explicación de los Archivos
 
