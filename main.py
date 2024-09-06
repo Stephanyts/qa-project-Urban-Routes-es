@@ -61,10 +61,10 @@ class TestUrbanRoutes:
         routes_page.driver_message(driver_comment)
         assert data.message_for_driver == UrbanRoutesPage.driver_message_field
 
-    def test_request_requirements(self):
+    def test_manta_request(self):
         self.driver.get(data.urban_routes_url)
         routes_page = UrbanRoutesPage(self.driver)
-        routes_page.request_requirements()
+        routes_page.manta_requirements()
         assert routes_page.is_manta_selected(), 'La casilla de Manta y pañuelos no está seleccionada'
 
     def ice_cream_request(self):
