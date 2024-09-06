@@ -5,8 +5,6 @@ from selenium.webdriver.chrome import webdriver
 from selenium.webdriver.support import expected_conditions
 from selenium.webdriver.support.wait import WebDriverWait
 from UrbanRoutesPage import UrbanRoutesPage
-from data import urban_routes_url
-
 
 class TestUrbanRoutes:
 
@@ -80,7 +78,7 @@ class TestUrbanRoutes:
         routes_page = UrbanRoutesPage(self.driver)
         routes_page.end_request()
         WebDriverWait(self.driver, 10).until(expected_conditions.visibility_of_element_located(UrbanRoutesPage.diver_information))
-        assert routes_page.is_send_request_button_enabled(), 'El botón pedir taxi no está habilitado'
+        assert routes_page.is_send_request_button_is_displayed(), 'El botón pedir taxi no está habilitado'
 
     @classmethod
     def teardown_class(cls):
