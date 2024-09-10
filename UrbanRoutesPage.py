@@ -8,9 +8,7 @@ class UrbanRoutesPage:
     # Localizador del botón pedir un taxi
     ask_taxi_button = (By.CLASS_NAME, 'button round')
     # Localizador del botón comfort
-    comfort_button = (By.CSS_SELECTOR, '.tcard active') #Corrección
-    # localizador del titulo del elemento comfort
-    comfort_title = (By.CSS_SELECTOR, '.tcard-title')
+    comfort_button_title = (By.CSS_SELECTOR, '.tcard-title') #Corrección
     # Localizador del campo numero de telefono
     number_field_module = (By.CLASS_NAME, 'np-text')
     # Localizador del campo para escribir el numero de telefono
@@ -77,7 +75,7 @@ class UrbanRoutesPage:
 
 
     def comfort_rate_button(self):
-        return self.driver.find_element(*self.comfort_button).click()
+        return self.driver.find_element(*self.comfort_button_title).click()
 
     def add_phone_number_method(self, phone_number):
         self.driver.find_element(*self.number_field_module).click()
