@@ -8,7 +8,7 @@ class UrbanRoutesPage:
     # Localizador del botón pedir un taxi
     ask_taxi_button = (By.CLASS_NAME, 'button round')
     # Localizador del botón comfort
-    comfort_button = (By.CSS_SELECTOR, '.tcard active')
+    comfort_button = (By.CSS_SELECTOR, '.tcard active') #Corrección
     # localizador del titulo del elemento comfort
     comfort_title = (By.CSS_SELECTOR, '.tcard-title')
     # Localizador del campo numero de telefono
