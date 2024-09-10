@@ -1,3 +1,4 @@
+# Se han realizado correcciones sugeridas por el revisor! por favor revisar los comentarios escritos entre asteriscos #** **
 import Helpers
 import data
 from selenium.webdriver.common.by import By
@@ -7,8 +8,8 @@ class UrbanRoutesPage:
     to_field = (By.ID, 'to')
     # Localizador del botón pedir un taxi
     ask_taxi_button = (By.CLASS_NAME, 'button round')
-    # Localizador del botón comfort
-    comfort_button_title = (By.CSS_SELECTOR, '.tcard-title') #Corrección
+    #**Localizador del botón comfort con selector unico sugerido por revisión**
+    comfort_button_title = (By.CSS_SELECTOR, '.tcard-title') 
     # Localizador del campo numero de telefono
     number_field_module = (By.CLASS_NAME, 'np-text')
     # Localizador del campo para escribir el numero de telefono
@@ -48,7 +49,7 @@ class UrbanRoutesPage:
     # Localizador enviar solicitud de taxi
     send_taxi_request = (By.CLASS_NAME, 'smart-button-main')
     
-    # Localizador de informacion del conductor (Con clase sugerida por Revisor)
+    #**Localizador de informacion del conductor (Con clase sugerida por Revisor)**
     diver_information = (By.CLASS_NAME, 'order-header-title')
 
     def __init__(self, driver):
@@ -112,6 +113,6 @@ class UrbanRoutesPage:
     def end_request(self):
         self.driver.find_element(*self.send_taxi_request).click()
 
-    #Corrección sugerida por Revisión:
+    #**Corrección sugerida por Revisión:**
     def is_send_request_button_is_displayed(self):
         return self.driver.find_element(*self.send_taxi_request).is_displayed()
