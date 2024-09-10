@@ -47,7 +47,7 @@ class UrbanRoutesPage:
     ice_cream_chosen = (By.CSS_SELECTOR, '.counter-value')
     # Localizador enviar solicitud de taxi
     send_taxi_request = (By.CLASS_NAME, 'smart-button-main')
-    # Localizador de informacion del conductor
+    # Localizador de informacion del conductor (Con clase sugerida por Revisor)
     diver_information = (By.CLASS_NAME, 'order-header-title')
 
     def __init__(self, driver):
@@ -111,5 +111,6 @@ class UrbanRoutesPage:
     def end_request(self):
         self.driver.find_element(*self.send_taxi_request).click()
 
+    #Corrección sugerida por Revisión:
     def is_send_request_button_is_displayed(self):
         return self.driver.find_element(*self.send_taxi_request).is_displayed()
