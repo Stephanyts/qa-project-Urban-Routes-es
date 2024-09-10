@@ -34,7 +34,7 @@ class TestUrbanRoutes:
         ask_taxi = routes_page.ask_taxi_option()
         WebDriverWait(self.driver, 5).until(expected_conditions.element_located_to_be_selected(ask_taxi))
         routes_page.comfort_rate_button()
-        assert routes_page.comfort_title == 'Comfort'
+        assert routes_page.comfort_title == 'Comfort' #Validación del elemento comfort mediante texto
 
     def test_add_phone_number(self):
         self.driver.get(data.urban_routes_url)
