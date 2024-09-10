@@ -1,3 +1,4 @@
+# Se han realizado correcciones sugeridas por el revisor! por favor revisar los comentarios escritos entre asteriscos #** **
 import Helpers
 import data
 from selenium import webdriver
@@ -34,7 +35,7 @@ class TestUrbanRoutes:
         ask_taxi = routes_page.ask_taxi_option()
         WebDriverWait(self.driver, 5).until(expected_conditions.element_located_to_be_selected(ask_taxi))
         routes_page.comfort_rate_button()
-        #Validación del elemento comfort mediante texto según correcciones sugeridas
+        #**Validación del elemento comfort mediante texto según correcciones sugeridas**
         assert routes_page.comfort_button_title == 'Comfort' 
 
     def test_add_phone_number(self):
@@ -78,7 +79,7 @@ class TestUrbanRoutes:
         self.driver.get(data.urban_routes_url)
         routes_page = UrbanRoutesPage(self.driver)
         routes_page.end_request()
-        #Validación de prueba 8 según correcciones sugeridas
+        #**Validación de prueba 8 según correcciones sugeridas**
         WebDriverWait(self.driver, 10).until(expected_conditions.visibility_of_element_located(UrbanRoutesPage.diver_information))
         assert routes_page.is_send_request_button_is_displayed(), 'El botón pedir taxi no está habilitado' 
 
