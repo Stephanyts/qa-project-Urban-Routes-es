@@ -47,6 +47,7 @@ class UrbanRoutesPage:
     ice_cream_chosen = (By.CSS_SELECTOR, '.counter-value')
     # Localizador enviar solicitud de taxi
     send_taxi_request = (By.CLASS_NAME, 'smart-button-main')
+    
     # Localizador de informacion del conductor (Con clase sugerida por Revisor)
     diver_information = (By.CLASS_NAME, 'order-header-title')
 
